@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Post</title>
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="topbar" aria-label="Navegacao principal">
+      <div class="brand">⭐⭐PostDevStart⭐⭐</div>
+      <div class="tagline">Crie posts incríveis em poucos cliques</div>
+    </nav>
+
+    <main class="page">
+      <section class="composer" aria-labelledby="composer-title">
+        <header>
+          <h1 id="composer-title">Criar um post</h1>
+          <p class="hint">Preencha o titulo e o conteudo para enviar.</p>
+        </header>
+
+        <form id="post-form" class="post-form">
+          <label for="titulo" class="field">
+            <span>Titulo</span>
+            <input
+              id="titulo"
+              name="titulo"
+              type="text"
+              placeholder="Ex: Novidades do projeto"
+              required
+              autocomplete="off"
+            />
+          </label>
+
+          <label for="conteudo" class="field">
+            <span>Conteudo</span>
+            <textarea
+              id="conteudo"
+              name="conteudo"
+              rows="6"
+              placeholder="Escreva o texto do post..."
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit" class="submit-btn" aria-label="Enviar post">
+            Enviar agora
+          </button>
+        </form>
+      </section>
+
+      <aside class="preview" aria-labelledby="preview-title">
+        <header>
+          <h2 id="preview-title">Preview do post</h2>
+          <p class="hint">O resultado do envio aparece aqui.</p>
+        </header>
+
+        <article class="post-card">
+          <h2 id="renderizador-titulo">Seu titulo aparece aqui</h2>
+          <p id="renderizador-conteudo">Seu conteudo aparece aqui.</p>
+        </article>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <small>Projeto de pratica com HTML, CSS e JavaScript.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
